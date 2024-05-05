@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Linq;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -36,7 +37,7 @@ namespace Camos
                 "🐧","🐧",
             };
             Random rnd = new Random();
-            foreach(TextBlock textBlock in mainGrid.Children.ofType<TextBlock>())
+            foreach(TextBlock textBlock in mainGrid.Children.OfType<TextBlock>())
             {
                 int index = rnd.Next(animalEmoji.Count);    
                 string nextEmoji = animalEmoji[index];

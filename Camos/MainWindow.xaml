@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Camos"
         mc:Ignorable="d"
-        Title="It is MainWindow" Height="650" Width="600" HorizontalAlignment="Left" VerticalAlignment="Top">
+        Title="It is MainWindow" Height="650" Width="600" HorizontalAlignment="Center" VerticalAlignment="Center"
+        WindowStartupLocation="CenterScreen">
     <Grid x:Name="mainGrid">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="150*"/>
@@ -18,9 +19,9 @@
             <RowDefinition Height="130*"/>
             <RowDefinition Height="130*"/>
             <RowDefinition Height="130*"/>
-            <RowDefinition Height="130*"/>
+            <RowDefinition Height="130*"/> 
         </Grid.RowDefinitions>
-        <TextBlock Grid.Column="0" HorizontalAlignment="Center" Grid.Row="0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center" FontSize="36" Height="119" Width="149"/>
+        <TextBlock Grid.Column="0" HorizontalAlignment="Center" Grid.Row="0" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="36" Height="119" Width="149"><Run/><LineBreak/><Run Language="uk-ua" Text="      "/><Run Text="lock"/></TextBlock>
         <TextBlock Grid.Column="1" HorizontalAlignment="Center" Grid.Row="0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center" FontSize="36" Height="119" Width="149"/>
         <TextBlock Grid.Column="2" HorizontalAlignment="Center" Grid.Row="0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center" FontSize="36" Height="119" Width="149"/>
         <TextBlock Grid.Column="3" HorizontalAlignment="Center" Grid.Row="0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center" FontSize="36" Height="119" Width="149"/>
